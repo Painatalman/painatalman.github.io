@@ -1,13 +1,1 @@
-(function() {
-  if (document.documentElement.clientWidth > 500) {
-    var $header = $('#header');
-    $(window).on('scroll', function() {
-      var y = window.scrollY || window.pageYOffset;
-      if (y > 40) {
-        $header.addClass('small');
-      } else {
-        $header.removeClass('small');
-      }
-    });
-  }
-}());
+!function(){if(document.documentElement.clientWidth>500){var l=$("#header");$(window).on("scroll",function(){var n=window.scrollY||window.pageYOffset;n>40?l.addClass("small"):l.removeClass("small")})}}();

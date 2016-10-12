@@ -29,10 +29,6 @@
 				<h1>
 					<a href="/">Fora do sítio</a>
 					
-						<a class="github" href="https://github.com/dnxbf321">
-	  					<svg aria-hidden="true" class="octicon octicon-mark-github" height="28" role="img" version="1.1" viewBox="0 0 16 16" width="28"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59 0.4 0.07 0.55-0.17 0.55-0.38 0-0.19-0.01-0.82-0.01-1.49-2.01 0.37-2.53-0.49-2.69-0.94-0.09-0.23-0.48-0.94-0.82-1.13-0.28-0.15-0.68-0.52-0.01-0.53 0.63-0.01 1.08 0.58 1.23 0.82 0.72 1.21 1.87 0.87 2.33 0.66 0.07-0.52 0.28-0.87 0.51-1.07-1.78-0.2-3.64-0.89-3.64-3.95 0-0.87 0.31-1.59 0.82-2.15-0.08-0.2-0.36-1.02 0.08-2.12 0 0 0.67-0.21 2.2 0.82 0.64-0.18 1.32-0.27 2-0.27 0.68 0 1.36 0.09 2 0.27 1.53-1.04 2.2-0.82 2.2-0.82 0.44 1.1 0.16 1.92 0.08 2.12 0.51 0.56 0.82 1.27 0.82 2.15 0 3.07-1.87 3.75-3.65 3.95 0.29 0.25 0.54 0.73 0.54 1.48 0 1.07-0.01 1.93-0.01 2.2 0 0.21 0.15 0.46 0.55 0.38C13.71 14.53 16 11.53 16 8 16 3.58 12.42 0 8 0z"></path></svg>
-						</a>
-					
 				</h1>
 				
 					<h2>
@@ -43,15 +39,16 @@
 			<nav id="menu">
 				<ul>
 					
-						<li><a href="/">首页</a></li>
+						<li><a href="/">home</a></li>
 					
-						<li><a href="/archives/">归档</a></li>
+						<li><a href="/archives/">archive</a></li>
 					
 				</ul>
 			</nav>
 		</div>
 	</div>
 </header>
+
 
 <div id="content">
 	<div class="center">
@@ -70,18 +67,75 @@
 							<i class="fa fa-file"></i>
 						
 					</div>
-					<time datetime="2016-10-01T20:00:49.000Z">2016-10-01</time>
+					<time datetime="2016-10-12T17:14:31.000Z">2016-10-12</time>
 				</div>
 			
 			
 	
-		<h1 class="title" data-role="articleTitle"><a href="/2016/10/01/Wishlist-do-Programador/">Wishlist do Programador</a></h1>
+		<h1 class="title" data-role="articleTitle"><a href="/2016/10/12/emoji-proposta-para-commits/">Como organizar commits... com emoji!</a></h1>
 	
 
 		</header>
 		<div class="entry">
 			
-				<h2 id="Metas-do-Programador-Parte-1"><a href="#Metas-do-Programador-Parte-1" class="headerlink" title="Metas do Programador - Parte 1"></a>Metas do Programador - Parte 1</h2><p>Existe, em diversos contextos profissionais, uma lista ‘virtual’ de metas que deverão ser atingidas por um trabalhador para este ser considerado ‘senior’. Digo ‘virtual’, isto porque nunca li um documento que reunisse todas estes supostos ‘feitos’… apenas tenho conhecimento deles por causa das frequentes situações laborais onde nos deparamos com um veterano a citar algo do género</p>
+				<blockquote>
+<img src="/2016/10/12/emoji-proposta-para-commits/comic.png" alt="XKCD comic" title="XKCD comic">
+<p><a href="https://xkcd.com/1296/" target="_blank" rel="external">https://xkcd.com/1296/</a></p>
+</blockquote>
+<p>Este artigo assume algum conhecimento prévio sobre <a href="https://www.youtube.com/watch?v=WVLhm1AMeYE" target="_blank" rel="external">Git e sistemas de gestão de versões</a>.</p>
+<p>Só porque sou <em>hipster</em>, vou começar a marcar os meus <em>commits</em> com emoji. Assim, ao analisarem um símbolo à esquerda, já sabem que tipo de commit é!</p>
+<ul>
+<li>:wrench: (‘:wrench:’) Resolução de algum <em>bug</em> ou problema</li>
+<li>:warning: (‘:warning:’) WorkInProgress?</li>
+<li>:pencil: (‘:pencil:’) Algo relacionado com conteúdo textual (uma mensagem numa página ou uma <em>label</em>?)</li>
+<li>:book: (‘:book:’) Atualização de documentação</li>
+<li>:email: (‘:email:’) Algo relacionado com e-mail</li>
+<li>:sunglasses: (‘:sunglasses:’) Estilização de componentes</li>
+</ul>
+<h3 id="Uh…-contexto"><a href="#Uh…-contexto" class="headerlink" title="Uh… contexto?"></a>Uh… contexto?</h3><p>Não é por acaso que, dentro do sistema de revisão/<em>versioning</em> Git, toda a revisão (<em>commit</em>) requer uma <em>mensagem</em>. Afinal de contas, qualquer alteração ao código de um projeto deve ser justificada, e é de esperar uma descrição para a mesma. Como é que vou aprovar ou inverter uma alteração da autoria de outrém se não souber o motivo por detrás dela?</p>
+<p>É, portanto, de esperar que existam pessoas com uma justificada preocupação pelo modo como estas mensagens são escritas (como <a href="http://alistapart.com/article/the-art-of-the-commit" target="_blank" rel="external">este senhor</a>, ou <a href="http://chris.beams.io/posts/git-commit/" target="_blank" rel="external">este senhor</a>, ou <a href="https://github.com/erlang/otp/wiki/writing-good-commit-messages" target="_blank" rel="external">este senhor</a>).</p>
+<p>Alguma vez ponderaste definir uma estrutura básica para uma mensagem relativa a um <em>commit</em>? Quiçá, para que seja possível analisar e rever o histórico de um projeto e das suas alterações? Ou mesmo apenas para reforçar alguma disciplina numa equipa desorganizada?</p>
+
+			
+		</div>
+		<footer class="clearfix">
+			
+			
+			
+	<div class="tags">
+		<i class="fa fa-tags"></i>
+		
+			<a href="/tags/git-workflow-fun-emoji/">#git, workflow, fun, emoji</a>
+		
+	</div>
+
+		</footer>
+	</div>
+</article>
+	
+		
+		<article class="post">
+	<div class="post-content">
+		<header>
+			
+				<div class="meta">
+					<div class="icon">
+						
+							<i class="fa fa-file"></i>
+						
+					</div>
+					<time datetime="2016-10-01T20:00:49.000Z">2016-10-01</time>
+				</div>
+			
+			
+	
+		<h1 class="title" data-role="articleTitle"><a href="/2016/10/01/Wishlist-do-Programador/">Metas do Programador - Parte 1</a></h1>
+	
+
+		</header>
+		<div class="entry">
+			
+				<p>Existe, em diversos contextos profissionais, uma lista ‘virtual’ de metas que deverão ser atingidas por um trabalhador para este ser considerado ‘senior’. Digo ‘virtual’, isto porque nunca li um documento que reunisse todas estes supostos ‘feitos’… apenas tenho conhecimento deles por causa das frequentes situações laborais onde nos deparamos com um veterano a citar algo do género</p>
 <blockquote>
 <p>Não serás um verdadeiro x até fazeres y</p>
 </blockquote>
@@ -106,6 +160,13 @@
 			
 			
 			
+	<div class="tags">
+		<i class="fa fa-tags"></i>
+		
+			<a href="/tags/fun/">#fun</a>
+		
+	</div>
+
 		</footer>
 	</div>
 </article>
@@ -132,7 +193,7 @@
 		</header>
 		<div class="entry">
 			
-				<h2 id="Hino-ao-Fail-Stack"><a href="#Hino-ao-Fail-Stack" class="headerlink" title="Hino ao Fail Stack"></a>Hino ao Fail Stack</h2><ul>
+				<ul>
 <li>O <em>fail-stack developer</em> é aquele que sabe um pouco de muito… que na prática significa que sabe muito de nada!</li>
 <li>O <em>fail-stack developer</em> é aquele que entra numa corrida até 8 pessoas e chega sempre em 4º lugar</li>
 </ul>
@@ -163,13 +224,13 @@
 			
 			
 	
-		<h1 class="title" data-role="articleTitle"><a href="/2016/10/01/failstack/">failstack</a></h1>
+		<h1 class="title" data-role="articleTitle"><a href="/2016/10/01/failstack/">O Fail-stack developer</a></h1>
 	
 
 		</header>
 		<div class="entry">
 			
-				<h2 id="O-Fail-stack-developer"><a href="#O-Fail-stack-developer" class="headerlink" title="O Fail-stack developer"></a>O Fail-stack developer</h2><p>A web é um ambiente complicado porque envolve diversas tecnologias: se deixares de lado uma boa parte delas, corres o risco de não conseguir montar um negócio sozinho, mas a alternativa é, na minha opinião pessoal, bem pior…</p>
+				<p>A web é um ambiente complicado porque envolve diversas tecnologias: se deixares de lado uma boa parte delas, corres o risco de não conseguir montar um negócio sozinho, mas a alternativa é, na minha opinião pessoal, bem pior…</p>
 <p>Em termos da <em>web</em>, existem duas especialidades gerais nas quais podem ser inseridas praticamente qualquer <em>web developer</em>:</p>
 <ul>
 <li>Front-end developer</li>
@@ -208,20 +269,6 @@
 	
 </nav>
 
-	
-<script>
-	(function (disqus_shortname) {
-		window.addEventListener('DOMContentLoaded', function () {
-			var dsq = document.createElement('script');
-			dsq.type = 'text/javascript';
-			dsq.async = true;
-			dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
-			document.getElementsByTagName('head')[0].appendChild(dsq);
-		}, false);
-	}('dnxbf321'));
-</script>
-
-
 
 		</div>
 		
@@ -241,7 +288,19 @@
 
 <script src="/bower_components/jquery/dist/jquery.min.js"></script>
 <script src="/js/header-animate.js"></script>
+<script src="/bower_components/emojify.js/dist/js/emojify.min.js"></script>
+<script>
+emojify.setConfig({
+    only_crawl_id    : null,            // Use to restrict where emojify.js applies
+    img_dir          : '/bower_components/emojify.js/dist/images/basic',  // Directory for emoji images
+});
+var entries = document.querySelectorAll('.entry');
 
+[].forEach.call(entries, function(entry){
+	emojify.run(entry);
+});
+
+</script>
 
 	<script src="/js/title-animate.js"></script>
 
